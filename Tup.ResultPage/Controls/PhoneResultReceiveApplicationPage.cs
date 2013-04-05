@@ -19,7 +19,7 @@ namespace Tup.ResultPage.Controls
         protected void HookPageNavigatedFrom<TPageResult>(NavigationEventArgs navArgs, Action<ResultPageEventArgs<IDictionary<string, int>>> completed)
           where TPageResult : class, IResultPage<int>
         {
-            if (navArgs.Content == null || !(navArgs.Content is TPageResult))
+            if (navArgs.NavigationMode != NavigationMode.New || navArgs.Content == null || !(navArgs.Content is TPageResult))
                 return;
 
             var page = navArgs.Content as TPageResult;

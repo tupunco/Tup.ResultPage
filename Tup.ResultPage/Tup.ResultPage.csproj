@@ -93,6 +93,7 @@
     <Compile Include="Utils\ArrayUtil.cs" />
     <Compile Include="Utils\ThrowHelper.cs" />
     <Compile Include="Utils\UserDataServices.cs" />
+    <Compile Include="Utils\Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
